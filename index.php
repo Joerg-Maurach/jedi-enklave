@@ -3,9 +3,13 @@
 <head>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="menu.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+  <div id="sidebar">
+    <?php include 'menu.php'; ?>
+  </div>
   <h1>Willkommen in der Jedi-Enklave!</h1>
   <h2>Verzeichnisse</h2>
   <div id="directory-list">

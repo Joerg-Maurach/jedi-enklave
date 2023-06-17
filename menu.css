@@ -1,0 +1,48 @@
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu .menu-icon {
+  display: none; /* Verstecke den Hamburger-Menü-Button standardmäßig auf größeren Bildschirmen */
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-items li {
+  background-color: #f2f2f2;
+  margin-bottom: 5px;
+}
+
+.menu-items li:hover {
+  background-color: #ccc;
+}
+
+.menu-items li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Medienabfrage für Smartphones */
+@media (max-width: 768px) {
+  .menu .menu-icon {
+    display: block; /* Zeige den Hamburger-Menü-Button auf Smartphones */
+    cursor: pointer;
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .menu .menu-items {
+    display: none; /* Verstecke das Menü auf Smartphones standardmäßig */
+  }
+
+  /* Zeige das Menü, wenn der Hamburger-Menü-Button angeklickt wird */
+  .menu .menu-icon:checked + .menu-items {
+    display: block;
+  }
+}
