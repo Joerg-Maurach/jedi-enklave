@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Box Breathing</h1>
+  <div id="input-container">
+    <input id="rounds-input" type="number" placeholder="Anzahl der Runden">
+    <button id="start-button" onclick="startBreathing()">Start</button>
+    <p id="error-message" class="error-message"></p>
+  </div>
+  <div id="timer-container" style="display: none;">
+    <div id="round-info"></div>
+    <div id="countdown"></div>
+    <div id="phase-info"></div>
+  </div>
+  <div id="footer"></div>
+  <audio id="start-sound" src="sounds/start.mp3"></audio>
+  <audio id="inhale-sound" src="sounds/einatmen.mp3"></audio>
+  <audio id="hold-sound" src="sounds/halten.mp3"></audio>
+  <audio id="exhale-sound" src="sounds/ausatmen.mp3"></audio>
+  <audio id="end-sound" src="sounds/ende.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

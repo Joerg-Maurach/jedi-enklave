@@ -1,0 +1,78 @@
+body {
+  background-color: #d6c7b7;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 50px;
+}
+
+#input-container {
+  margin-bottom: 20px;
+}
+
+#input-container input,
+#input-container button {
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+#input-container button {
+  margin-left: 10px;
+  background-color: #958b71;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#input-container button:hover {
+  background-color: #ffca28;
+}
+
+#timer {
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: blue;
+  text-shadow: 0 0 10px blue;
+  display: none;
+}
+
+#input-container,
+#round-info,
+#countdown,
+#phase-info,
+#footer {
+  background-color: #d99d56;
+  margin-bottom: 0;
+  padding: 20px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+}
+
+#countdown {
+  font-weight: bold;
+  color: blue;
+  font-size: 36px;
+}
+
+#footer {
+  font-size: 12px;
+  color: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d99d56;
+  padding: 20px;
+}
